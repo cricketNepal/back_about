@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--white);
+}
+:root {
+    --primary-color: #000839;
+    --primary-shades: #00020b;
+    --para-color: #80849c;
+    --helper-color: #1264fa;
+    --white: #fff;
+    --bg-color: #e6e6eb;
+  }
+
+  a{
+    text-decoration: none;
+  }
+.header{
+    z-index: 4;
+    height: 9.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0.01rem;
+    padding: 0 5.4rem;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 1.5px 3px var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list{
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+.list .button{
+    padding: 1.2rem 2.4rem;
+    background-color: var(--white);
+    color: var(--helper-color);
+    border: 1px solid var(--helper-color);
+    transition: all 0.1s ease-in-out;
+    border-radius: 10px;
+}
+
+.list .button:hover, .button:active{
+    background-color: var(--primary-color);
+    color: var(--helper-color);
+}
+
+.mobile{
+   display: none;
+    font-size: 4rem;
+color: var(--helper-color);
+}
+
+#cross[name="close"]{
+    display: none;
+}
+.para{
+    color: var(--para-color);
+}
+ .aboutsec{
+    top: 5px;
+    background-image: url(blue\ circle.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,300px) 10.6rem 350px;
+    gap: 10px;
+}
+.aboutsec .one{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.aboutsec .two{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutsec .three{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutsec .four{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+.aboutsec .five{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutsec .six{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.me{
+    height: 72%;
+    width: 60%;
+    box-shadow: 2px 2px 4px 1px grey;
+}
+.footer{
+    box-shadow: 2px 2px 2px 2px #f7f7f7;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 2px whitesmoke;
+   grid-column: 1/-1;
+   grid-row: 5/-1;
+}
+h2{
+    color: var(--helper-color);
+    text-shadow: 2px 2px 3px 1px var(--helper-color);
+}
+
+#sBtn{
+    font-size: 1.0rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--white);
+    background-color: red;
+    border: 1px solid var(--primary-shades);
+   line-height: 26px;
+   position: relative;
+   bottom: 10px;
+   text-transform: capitalize;
+   transition: all 1s linear;
+   border: 1px solid var(--primary-shades);
+   border-radius: 10px;
+   padding: 0 1.2rem;
+   left: 70%;
+}
+
+.aboutsec .sign{
+    background-image: linear-gradient(to right,rgb(163, 48, 48),rgb(139, 88, 88));
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: first baseline;
+    padding: 0 10.5rem 0 6.2rem;
+   align-items: center;
+   /* box-sizing: border-box; */
+   top: 10%;
+}
+
+.sec2{
+    position: relative;
+    left: 30%;
+}
+#there , #here{
+    text-align: center;
+    color: red;
+    position: relative;
+    left: 5.4rem;
+}
+
+.footer #containeer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100%;
+    gap: 3px;
+    color: var(--para-color);
+}
+.footer #containeer .left{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--para-color);
+}
+
+.footer #containeer #payment{
+    text-align: center;
+    justify-content: center;
+    padding: 5%;
+}
+.footer #containeer #payment #center{
+text-align: center;
+font-size: larger;
+}
+.footer #containeer #payment .card{
+    font-size: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,50%);
+    gap: 10px;
+    }
+    .footer #containeer .left ul li{
+        padding: 7px;
+        justify-content: center;
+        align-content: center;
+        }
+        .footer #containeer h2{
+            padding-top: 5px;
+
+            color: var(--primary-shades);
+            font-size: 2.0rem;
+        }
+        .footer .copyright{
+            line-height: 5.1rem;
+            background-color:var(--primary-shades);
+            display: grid;
+            grid-template-columns: 1fr;
+         }
+         .footer .copyright .cpy{
+            color: var(--para-color);
+            text-align: center;
+            font-style: oblique;
+            font-weight: 200;
+            font-size: larger;
+            font-family: mahesh;
+         }
+.footer #containeer h3{
+    color: var(--primary-shades);
+    font-size: 5.4rem;
+}
+
+    .footer #containeer #payment .card .div1, .div3{
+       text-align: right;
+       
+        }
+        .footer #containeer #payment .card .div2, .div4{
+            text-align: left;
+           padding-left: 30px;
+             }
+             @media(max-width:1024){
+                html{
+                    font-size: 75%;
+                }
+                main{
+                    max-width: 1024px;
+                    min-width: 980px;
+                }
+             }
+   
+
+    @media(max-width:980px){
+    
+        html{
+            font-size: 70.25%;
+        }
+        main{
+            max-width: 980px;
+        }
+        .navigation{
+            transform: translateX(100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            background-color: var(--primary-shades);
+            height: 100vh;
+            width: 60%;
+            top: 0;
+            box-sizing: border-box;
+            left: 0;
+            align-content: center;
+            display: none;
+        }
+    
+       .navigation .list{
+        position: absolute;
+        top: 100px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         color: var(--white);
+        left: 10%;
+       }
+       .mobile{
+        display: block;
+        font-size: 4rem;
+        color: #041027;
+        z-index: 999999999;
+       }
+       .on .mobile #cross[name="close"]{
+        display: block;
+        font-size: 4rem;
+        color: var(--primary-color);
+        z-index: 999;
+        color: var(--white);
+       }
+       .on .mobile #bar[name="menu"]{
+        display: none;
+        font-size: 4rem;
+        
+       }
+       .on .navigation{
+        transform: translateX(80%);
+        opacity: 885;
+        z-index: 99;
+        display: block;
+    }
+    .aboutsec{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,300px) 10.1rem 350px;
+        gap: 0px;
+    }
+    .aboutsec .one{
+     grid-row: 1/2;
+    }
+    
+    .aboutsec .two{
+        margin-top: -20%;
+        grid-row: 2/3;
+    }
+    
+    .aboutsec .three{
+        grid-row: 3/4;
+    }
+    
+    .aboutsec .four{
+        margin-top: -20%;
+        grid-row: 4/5;
+    }
+    
+    
+    .aboutsec .five{
+        grid-row: 5/6;
+    }
+    
+    .aboutsec .six{
+        margin-top: -20%;
+        grid-row: 6/7;
+    }
+    .aboutsec .sign{
+         padding: 0 10.2rem 0 7.2rem;
+        font-size: 0.8rem;
+        grid-column: 1/-1;
+        grid-row: 7/8;
+     }
+     .aboutsec .sign .sec1{
+        width: 70%;
+        width: 100%;
+     }
+     .aboutsec .sign .sec2{
+        box-sizing: border-box;
+        left: 17%;
+        width: 30%;
+        width: 100%;
+     }
+    .footer{
+       grid-column: 1/-1;
+       grid-row: 8/9;
+    }
+    #sBtn{
+        bottom: 10px;
+        left: 50%;
+    }
+    }
+
+@media(max-width:610px){
+    .footer #containeer .left{
+        font-size: 1.2rem;
+    }
+   
+    .footer #containeer #payment .card{
+        font-size: 80px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,50%);
+        gap: 5px;
+        }
+   .footer #containeer #payment .card .div2, .div4{ 
+   padding-left: 9px;
+     }
+     .aboutsec .sign .sec1{
+        justify-content: left;
+        align-content: flex-start;
+        padding-top: -60px;
+     }
+     .aboutsec{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,300px) 7.1rem 350px;
+        gap: 0px;
+    }
+    .footer .copyright{
+        line-height: 10.1rem;
+       
+     }
+}
+
+
+@media(max-width:410px){
+    .footer #containeer .left{
+        font-size: 1rem;
+    }
+    
+    .mobile{
+        position: relative;
+        left: 15%;
+    }
+    .logo{
+        position: relative;
+        right: 15%;
+    }
+    html{
+        max-width: 410px;
+    }
+    .footer{
+        width: 100vw;
+    }
+    .footer #containeer #payment .card .div2, .div4{ 
+        padding-left: 5px;
+      }
+      .footer #containeer #payment .card{
+        font-size: 60px;
+        display: grid;
+        gap: 2px;
+        }
+        .aboutsec .sign{
+           width: 100vw;
+           align-items: flex-start;
+           /* box-sizing: border-box; */
+           
+           height: 11.5rem;
+           
+        }
+        .aboutsec .sign input{
+            width: 40vw;
+        }
+        .footer #containeer #payment #center{
+            color: var(--bg-color);
+            }
+}
+
+
+

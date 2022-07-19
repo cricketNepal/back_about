@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" target="_blank" class="logo">WEBDEVELOPMENT</a>
+        <nav class="navigation">
+            <ul class="list">
+                <li><a href="file:///G:/Mahesh%20Bhandari/Mahesh%20class%20XI/index.html#" class="navbar-link"> Home </a></li>
+                <li><a href="#" class="navbar-link" id="about"> About </a></li>
+                <li><a href="file:///G:/Mahesh%20Bhandari/Mahesh%20class%20XI/Firstresweb.html#" class="navbar-link"> Gallery </a></li>
+                <li><a href="file:///G:/Mahesh%20Bhandari/Mahesh%20class%20XI/service.html#" class="navbar-link"> Services </a></li>
+                <li><a href="file:///G:/Mahesh%20Bhandari/Mahesh%20class%20XI/self.html#" class="navbar-link" id="phone"> Contact </a></li>
+                <li><a href="file:///G:/Mahesh%20Bhandari/Mahesh%20class%20XI/Login.html" class="button">LOGIN</a></li>
+              </ul>
+        </nav>
+        <div class="mobile">
+
+      <i name="menu" id="bar" class="fa fa-bars" aria-hidden="true"></i>
+        <i name="close" id="cross" class="fa fa-times" aria-hidden="true"></i>
+    </div> 
+    </header>
+        <div class="aboutsec" id="aboutsec">
+            <div class="one">
+                <h2>Our Visson</h2>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde optio, 
+                    ullam, aut est, aspernatur dicta libero molestias non harum tempore ex praesentium ducimus accusamus.</p>
+            </div>
+            <div class="two"><img src="vision.jpeg" alt="" class="me"></div>
+            <div class="three"><h2>Our Mission</h2><p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde optio, 
+                ullam, aut est, aspernatur dicta libero molestias non harum tempore ex praesentium ducimus accusamus.</p></div>
+            <div class="four"><img src="mission.jpeg" alt="" class="me">
+                </div>
+            <div class="five"><h2>Way to <strong>SUCESS</strong></h2><p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde optio, 
+                ullam, aut est, aspernatur dicta libero molestias non harum tempore ex praesentium ducimus accusamus.</p></div>
+            <div class="six"><img src="sucess.jpeg" alt=""class="me"></div>
+        <div class="sign">
+          <section class="sec1"><h2>Use Your Discount/Rebate Code To Get Discount  <i class="fa fa-arrow-right" aria-hidden="true"></i></h2></section> 
+          <section class="sec2">Sign Up ID : <input type="email" id="email" autocomplete="off"><br>
+            <span id="there"></span>
+           Rebate Code:<input type="password" id="pass"><br>
+        <span id="here"></span><br>
+        <button id="sBtn" onclick="valid()">Subscribe</button></section>
+        </div>
+        <footer class="footer">
+            <div id="containeer">
+                <div class="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sit cupiditate totam? At doloremque nihil qui? Pariatur consectetur blanditiis nobis commodi! Voluptatem, expedita
+                    iure. Quia.
+                    <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i>Shopping Site Near You</h2>
+                  <ul>
+                      <li><a href="https://www.amazon.com/" target="_blank">Amazon</a></li>
+                      <li><a href="https://www.alibaba.com/?src=sem_ggl&from=sem_ggl&cmpgn=407465347&adgrp=26917222987&fditm=&tgt=kwd-4326950265&locintrst=&locphyscl=1011034&mtchtyp=b&ntwrk=g&device=c&dvcmdl=&creative=106732396987&plcmnt=&plcmntcat=&p1=&p2=&aceid=&position=&localKeyword=alibababa&gclid=CjwKCAjwoMSWBhAdEiwAVJ2ndgtf33jg63JV-495x5bQnzoMfn7nBFU3HjNwQQ5dHqMJNjgPl9m7UBoCP4kQAvD_BwE" target="_blank">AliBaba</a></li>
+                      <li><a href="https://www.daraz.com.np/" target="_blank">Daraz</a></li>
+                      <li><a href="https://www.sastodeal.com/" target="_blank">Sasto deal</a></li>
+                  </ul></div>
+             <div id="payment">
+                <h3 id="center">Payment Method</h3>
+                <section class="card">
+                <div class="div1"><i class="fa fa-credit-card" aria-hidden="true"></i></div>
+                <div class="div2"><i class="fa fa-credit-card" aria-hidden="true"></i></div> 
+                <div class="div3"><i class="fa fa-credit-card" aria-hidden="true"></i></div> 
+                <div class="div4"><i class="fa fa-credit-card" aria-hidden="true"></i></div> 
+            </section>
+             </div>
+            </div>
+            <div class="copyright">
+                <div class="cpy"><h3><i class="fa fa-copyright" aria-hidden="true"></i>MaheshBhandari</h3></div>
+              </div>
+           </footer>
+        </div>
+        <script>
+   const valid=()=>{
+    let emails=document.getElementById("email").value;
+    let password=document.getElementById("pass").value;
+    if (emails==null || emails=="") {
+        document.getElementById("there").innerHTML= "required***<br>";
+        return false;
+    }
+    if(emails.charAt(emails.length-4)!='.' && emails.charAt(emails.length-3)!='.') {
+        document.getElementById("there").innerHTML= "incorrect email entered<br>";
+        return false;
+    }
+    if (emails.indexOf("@")==0) {
+        document.getElementById("there").innerHTML= "invalid email<br>";
+        return false;
+    }
+    if (password!='coupon2061') {
+        document.getElementById("here").innerHTML= "Wrong code entered";
+        return false;
+    }
+}
+const exit=document.getElementById("aboutsec");
+ const head=document.querySelector(".header");
+const mobileBar=document.querySelector(".mobile");
+ const func=()=>{
+    head.classList.toggle("on");
+ }
+exit.addEventListener('click',()=>{
+    head.classList.remove("on");
+})
+ mobileBar.addEventListener('click',func);
+
+
+
+
+        </script>
+</body>
+</html>
