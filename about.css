@@ -232,7 +232,7 @@ font-size: larger;
         justify-content: center;
         align-content: center;
         }
-        .footer #containeer h2{
+        .footer #containeer h1{
             padding-top: 5px;
             font-family: mahesh;
             color: var(--helper-color);
